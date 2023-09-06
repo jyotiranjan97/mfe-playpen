@@ -19,7 +19,9 @@ const devConfig = {
   plugins: [
     new ModuleFederationPlugin({
       name: "container",
-      remotes: {},
+      remotes: {
+        remoteOne: "remoteOne@http://localhost:7001/remoteOne.js",
+      },
       shared: packageJson.dependencies,
     }),
   ],

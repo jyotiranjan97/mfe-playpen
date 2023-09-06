@@ -10,15 +10,6 @@ const devConfig = {
     historyApiFallback: {
       index: "index.html",
     },
-    devMiddleware: {
-      headers: (req, res) => {
-        if (
-          (req.headers?.referer?.toLowerCase().indexOf("localhost") || -1) > 0
-        ) {
-          res.setHeader("Access-Control-Allow-Origin", "*");
-        }
-      },
-    },
   },
   //   output: {
   //     filename: "[contenthash].js",
@@ -31,7 +22,7 @@ const devConfig = {
       name: "remoteOne",
       filename: "remoteOne.js",
       exposes: {
-        "./RemoteOneApp": "./src/index",
+        "./RemoteOneApp": "./src/bootstrap",
       },
       shared: packageJson.dependencies,
     }),

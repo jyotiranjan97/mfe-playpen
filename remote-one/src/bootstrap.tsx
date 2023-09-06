@@ -14,3 +14,5 @@ if (process.env.NODE_ENV === "development") {
     mount(appId);
   }
 }
+
+export { mount };
