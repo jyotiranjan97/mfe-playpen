@@ -1,20 +1,9 @@
-import React, { useEffect, useRef } from "react";
-import { mount } from "remoteOne/RemoteOneApp";
+import React from "react";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
 
 const App = () => {
-  const ref = useRef(null);
-
-  useEffect(() => {
-    mount(ref.current);
-  }, []);
-
-  return (
-    <div>
-      <h1>Hello from App Shell</h1>
-      <br />
-      <div ref={ref}></div>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

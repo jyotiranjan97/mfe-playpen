@@ -7,6 +7,6 @@ document.body.innerHTML = '<div id="app"></div>';
 const appId = document.getElementById("app");
 
 if (appId) {
-  const root = createRoot(appId);
-  root.render(<App />);
+  const devRoot = createRoot(appId);
+  devRoot.render(<App />);
 }
