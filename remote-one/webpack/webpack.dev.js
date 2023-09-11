@@ -7,13 +7,14 @@ const devConfig = {
   mode: "development",
   devServer: {
     port: 7001,
-    historyApiFallback: {
-      index: "index.html",
+    historyApiFallback: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
     },
   },
-  //   output: {
-  //     filename: "[contenthash].js",
-  //   },
+  output: {
+    publicPath: "http://localhost:7001/",
+  },
   // optimization: { // ? Enabling this will enable HMR
   //   runtimeChunk: "single",
   // },
