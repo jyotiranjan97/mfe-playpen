@@ -1,6 +1,6 @@
 import React from "react";
 import RootPage from "../pages";
-import ProfilePage from "../pages/profile";
+import SettingsPage from "../pages/settings";
 import { NavigationManager } from "../components/NavigationManager";
 import { Outlet, RouteObject } from "react-router-dom";
 
@@ -18,8 +18,8 @@ export const routes: RouteObject[] = [
         element: <RootPage />,
       },
       {
-        path: "profile",
-        element: <ProfilePage />,
+        path: "settings",
+        element: <SettingsPage />,
       },
     ],
   },
