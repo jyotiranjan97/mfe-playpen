@@ -5,7 +5,10 @@ const DashboardPage = () => {
   return (
     <div>
       DashboardPage
-      <Link to="/remoteOne">Click</Link>
+      <br />
+      <Link to="/remoteOne">Remote One</Link>
+      <br />
+      <Link to="/remoteTwo">Remote Two</Link>
     </div>
   );
 };

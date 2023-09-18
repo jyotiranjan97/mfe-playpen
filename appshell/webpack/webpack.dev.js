@@ -21,6 +21,7 @@ const devConfig = {
       name: "container",
       remotes: {
         remoteOne: "remoteOne@http://localhost:7001/remoteOne.js",
+        remoteTwo: "remoteTwo@http://localhost:7002/remoteTwo.js",
       },
       shared: packageJson.dependencies,
     }),
